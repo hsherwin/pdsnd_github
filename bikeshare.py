@@ -12,7 +12,7 @@ def get_filters():
 
     Returns:
         (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
+        (str) month - name of the month to filter by, or "all" to apply no month filter (All months starting from January upto June)
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
@@ -185,7 +185,6 @@ def user_stats(df):
     if city == 'new york city' or city == 'chicago':
         earliest_year = df['Birth Year'].min()
         print('\nEarliest birth year:\n{}.'.format(earliest_year))
-
 
         # most recent year of birth:
     if city == 'new york city' or city == 'chicago':
